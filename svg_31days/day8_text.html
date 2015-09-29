@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG Page Template</title>
+        <script type="text/javascript" src="../d3/d3.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Your beautiful D3 code will go here
+        </script>
+		<svg width="600" height="700">
+			<defs>
+				<path id="a1" d="M0 200 C150 300 100 100 300 200" stroke="#000" fill="none"/>
+			</defs>
+			
+			<text x="50" y="20">TEXT</text>
+			<text x="50" y="40" fill="#09c">Fill</text>
+			<text x="50" y="60" stroke="#f00">Stroke</text>
+			<text x="50" y="90" stroke="#0a0" style="font-size:24px;">使用 STYLE</text>
+			<text x="200" y="0" style="font-size:24px; writing-mode: tb;">垂直文字</text>
+			
+			<text>
+				<textPath xlink:href="#a1">這是隨著路徑跑的文字，很酷吧</textPath>
+			</text>
+			<text dy="30">
+				<textPath startOffset="30%" xlink:href="#a1">這是隨著路徑跑的文字，很酷吧</textPath>
+			</text>
+			
+		</svg>
+    </body>
+</html>
